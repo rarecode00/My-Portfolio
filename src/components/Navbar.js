@@ -1,19 +1,42 @@
-import React from "react";
+import React , {useState , useEffect} from "react";
 import { Link } from "react-router-dom";
+import firebase from './firebase'
 
 const Navbar = () => {
+  const [imageURL , setImageURL] = useState('')
+  useEffect(() => {
+    const storageRef = firebase.storage().ref();
+    var listRef = storageRef.child('profile/')
+    listRef.listAll().then(function(res) {
+      res.items.forEach(function(itemRef) {
+        itemRef.getDownloadURL().then(function(url) {
+          // console.log(url)
+          setImageURL(url);
+        }).catch(function(error) {
+          console.log(error);
+        });
+      });
+    }).catch(function(error) {
+      console.log(error);
+    });
+  }, []);
+
+  const style = {
+     borderLeft: '1px solid red'
+  }
+
   return (
     <div className="nav-side">
       <div className="profile">
         <div>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkDwTLbK9NwlI2rpMD2waNlXgGTb5-1ZV9Pu2wPv8jqyA1xaC0H6aElSl9iP_n_LLLtnI&usqp=CAU" />
+          <img src= {imageURL}/>
           <p className="name">Krishna Sharma</p>
           <div className="title">Software Engineer</div>
           <div className="title">Full stack developer</div>
         </div>
         </div>
       <div className="nav-items">
-        <Link to="/">About</Link>
+        <Link to="/" className="border">About</Link>
         <Link to="/experience">Experience</Link>
         <Link to="/education">Education</Link>
         <Link to="/skills">Skills</Link>

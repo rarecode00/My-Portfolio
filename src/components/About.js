@@ -1,21 +1,28 @@
-import React, { useEffect } from "react";
-import firebase from './firebase'
+import React, { useEffect, useState } from "react";
+import firebase from "./firebase";
 const About = () => {
+  const [resumeURL, setResumeURL] = useState("");
   useEffect(() => {
     const storageRef = firebase.storage().ref();
-    var listRef = storageRef.child('profile/')
-    listRef.listAll().then(function(res) {
-      res.items.forEach(function(itemRef) {
-        itemRef.getDownloadURL().then(function(url) {
-          console.log(url)
-          // setImageURL(url);
-        }).catch(function(error) {
-          console.log(error);
+    var listRef = storageRef.child("resume/");
+    listRef
+      .listAll()
+      .then(function (res) {
+        res.items.forEach(function (itemRef) {
+          itemRef
+            .getDownloadURL()
+            .then(function (url) {
+              console.log(url);
+              setResumeURL(url);
+            })
+            .catch(function (error) {
+              console.log(error);
+            });
         });
+      })
+      .catch(function (error) {
+        console.log(error);
       });
-    }).catch(function(error) {
-      console.log(error);
-    });
   }, []);
 
   return (
@@ -45,16 +52,26 @@ const About = () => {
       </div>
 
       <div className="social-profiles">
-        <a href="https://www.linkedin.com/in/rarecode/" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.linkedin.com/in/rarecode/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <i className="fa-brands fa-linkedin"></i>
         </a>
-        <a href="https://github.com/rarecode00" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://github.com/rarecode00"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <i className="fa-brands fa-github"></i>
         </a>
-        <button>
-          <i className="fa-solid fa-cloud-arrow-down"></i>
-          Download Resume
-        </button>
+        <a href={resumeURL} target = {'_blank'}>
+          <button>
+            <i className="fa-solid fa-cloud-arrow-down"></i>
+            Download Resume
+          </button>
+        </a>
       </div>
     </div>
   );
