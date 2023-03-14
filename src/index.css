@@ -7,6 +7,7 @@ selector {
 
 :root{
   --nav-head-color: white;
+  --const-color: green;
 }
 
 /* Navbar ITEMS-------------------------------------------- */
@@ -27,6 +28,8 @@ selector {
   padding: 17px;
   text-decoration: none;
   font-size: 1.2rem;
+  border-bottom: 1px solid black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* -------------------------------------------------------- */
@@ -48,7 +51,7 @@ selector {
 /* Profile ---------------------------------------------- */
 
 .profile{
-  background-color: black;
+  background-color:#212121;
   width: 18vw;  
   display: flex;
   justify-content: center;
@@ -83,4 +86,64 @@ selector {
 .title:first-of-type{
    padding-left: 6px;
    padding-bottom: 1px;
+}
+
+/* About Section */
+
+.about-container{
+  background-color: #212121;
+  font-size: 7.2rem;
+  padding: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--const-color);
+}
+
+.first-name{
+  border: 1px solid var(--const-color);
+  border-radius: 0.2rem;
+  background-color: var(--const-color);
+  padding: 4px;
+  color: white;
+}
+
+.about-points{
+  color: white;
+  margin-left: -19px;
+  font-size: 1.1rem;
+}
+
+.about-points > li{
+  margin-top: 3px;
+}
+
+.about-me{
+  font-size: 1.2rem;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me > i{
+  margin-bottom: 15px;
+}
+
+.about-me > i span{
+  padding: 10px;
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.social-profiles a{
+   color: var(--const-color);
+   font-size:3rem;
+   margin-right: 15px;
+}
+
+.social-profiles button{
+  font-size: 1.3rem;
+  height: 50px;
+  position: relative;
+  top: -10px;
+  background-color: var(--const-color);
 }
