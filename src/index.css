@@ -41,9 +41,10 @@ selector {
   position: absolute;
   left: 18vw; /* adjust this value as needed */
   top: 0px;
-  border-left: 1px solid black;
+  border-left: 1px solid #333;
   background-color: red;
   width: calc(100vw - 18vw); /* calculate the remaining width */
+  
 }
 
 /* ------------------------------------------------------- */
@@ -92,8 +93,10 @@ selector {
 
 .about-container{
   background-color: #212121;
-  font-size: 7.2rem;
-  padding: 50px;
+  font-size: 7rem;
+  padding: 90px 10px 20px 30px;
+  height: 100vh;
+  margin: 0px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: var(--const-color);
 }
@@ -109,6 +112,7 @@ selector {
 .about-points{
   color: white;
   margin-left: -19px;
+  margin-top: 30px;
   font-size: 1.1rem;
 }
 
@@ -121,6 +125,7 @@ selector {
   color: whitesmoke;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .about-me > i{
@@ -131,6 +136,11 @@ selector {
   padding: 10px;
   font-size: 1rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.social-profiles{
+  position: relative;
+  top: -40px;
 }
 
 
@@ -146,4 +156,11 @@ selector {
   position: relative;
   top: -10px;
   background-color: var(--const-color);
+  color: white;
+  border: none;
+  border-radius: .2rem;
+}
+
+.social-profiles button i{
+  margin-right: 10px;
 }
