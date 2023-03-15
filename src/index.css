@@ -1,5 +1,6 @@
 html{
   overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif !important;
 }
 selector {
   --variable-name: value;
@@ -43,7 +44,7 @@ selector {
      color: white;
      padding: 18px;
      font-size: 1.3rem;
-     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-family: Arial, Helvetica, sans-serif;
   }
 
   .q-navbar{
@@ -51,7 +52,7 @@ selector {
     top: 15px;
     left: 600px;
     font-size: 1.4rem; 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 
   }
 
@@ -87,58 +88,66 @@ selector {
      top: 150px !important;
   }
 
+  .edu{
+    padding-top: 100px !important;
+  }
+
+  .social-profiles{
+    margin-top: 17px;
+  }
+
 }
 
-@media only screen and (max-width: 1015px ) {
+@media only screen and (max-width: 1058px ) {
    .q-navbar{
     left: 580px !important;
     transition: left 0.2s cubic-bezier(0.42, 0, 0.58, 1);
    }
 }
 
-@media only screen and (max-width: 993px ) {
+@media only screen and (max-width: 1037px ) {
   .q-navbar{
    left: 560px !important;
   }
 }
 
-@media only screen and (max-width: 975px ) {
+@media only screen and (max-width: 1016px ) {
   .q-navbar{
    left: 530px !important;
   }
 }
 
-@media only screen and (max-width: 946px ) {
+@media only screen and (max-width: 984px ) {
   .q-navbar{
    left: 500px !important;
   }
 }
 
-@media only screen and (max-width: 918px ) {
+@media only screen and (max-width: 956px ) {
   .q-navbar{
    left: 470px !important;
   }
 }
 
-@media only screen and (max-width: 889px ) {
+@media only screen and (max-width: 922px ) {
   .q-navbar{
    left: 430px !important;
   }
 }
 
-@media only screen and (max-width: 848px ) {
+@media only screen and (max-width: 885px ) {
   .q-navbar{
    left: 380px !important;
   }
 }
 
-@media only screen and (max-width: 796px ) {
+@media only screen and (max-width: 836px ) {
   .q-navbar{
    left: 340px !important;
   }
 }
 
-@media only screen and (max-width: 757px ) {
+@media only screen and (max-width: 794px ) {
   .q-navbar{
    left: 500px !important;
   }
@@ -206,7 +215,8 @@ selector {
   text-decoration: none;
   font-size: 1.2rem;
   border-bottom: 0.1px solid #3b3b3b;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  user-select: none;
 }
 
 .border{
@@ -268,13 +278,13 @@ selector {
 .name{
   margin-top: -3px;
   font-size: 1rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .title{
   color: gray;
   font-size: 0.9rem;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .title:first-of-type{
@@ -290,7 +300,7 @@ selector {
   padding: 90px 10px 20px 30px;
   height: 100vh;
   margin: 0px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: var(--const-color);
 }
 
@@ -328,7 +338,7 @@ selector {
 .about-me > i span{
   padding: 10px;
   font-size: 1rem;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .social-profiles{
@@ -341,8 +351,8 @@ selector {
    color: var(--const-color);
    font-size:3.3rem;
    margin-right: 15px;
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+   font-family: Arial, Helvetica, sans-serif;
+  }
 
 .social-profiles button{
   font-size: 1.3rem;
@@ -372,7 +382,7 @@ selector {
   color: white;
   font-size: 1.9rem;
   font-weight: 800;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 hr {
@@ -395,14 +405,14 @@ hr {
   font-size: 1.4rem;
   top: 90px;
   left: 120px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
 }
 
 .exp-dur{
   color: gray;
   font-size: 1rem;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   position: relative;
   top: -20px;
   left: -15px;
@@ -410,7 +420,7 @@ hr {
 
 .exp-pos{
   padding-left: 60px !important;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .exp-pos li{
@@ -440,7 +450,6 @@ hr {
   background-color: #212121;
   padding: 40px;
   height: 100vh;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 1.2rem;
 }
 
@@ -450,6 +459,7 @@ hr {
   object-fit: contain;
   position: absolute;
   left: 2vw;
+  user-select: none;
 }
 
 .school{
@@ -468,4 +478,4 @@ hr {
 .education-list li{
    margin-top: 40px;
    list-style: none;
-}
+ }
