@@ -370,7 +370,8 @@ selector {
 
 .header{
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
+  font-weight: 800;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -380,7 +381,7 @@ hr {
   border: none;
   border-top: 2px solid var(--const-color);
   margin: 10px 0;
-  width: 65vw;
+  width: 58vw;
 }
 
 .exp1 img{
@@ -431,4 +432,40 @@ hr {
 
 .exp-res li{
    color: white;
+}
+
+/* Education */
+
+.edu{
+  background-color: #212121;
+  padding: 40px;
+  height: 100vh;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.2rem;
+}
+
+.edu img{
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  position: absolute;
+  left: 2vw;
+}
+
+.school{
+   color: white;
+}
+
+.school-location{
+   color: gray;
+}
+
+.marks{
+  color: #b6b7ab;
+  font-weight: 600;
+}
+
+.education-list li{
+   margin-top: 40px;
+   list-style: none;
 }
