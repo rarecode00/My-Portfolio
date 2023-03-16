@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import firebase from "./firebase";
+import LoadingSpinner from "./LoadingSpinner";
 
 const Navbar = ({width}) => {
   const [imageURL, setImageURL] = useState("");
+  const [loading , setLoading] = useState(true)
   const location = useLocation();
   useEffect(() => {
     const storageRef = firebase.storage().ref();
@@ -17,6 +19,7 @@ const Navbar = ({width}) => {
             .then(function (url) {
               // console.log(url)
               setImageURL(url);
+              setLoading(false)
             })
             .catch(function (error) {
               console.log(error);
@@ -33,8 +36,11 @@ const Navbar = ({width}) => {
       {width > 1176 ? (
         <div className="nav-side">
           <div className="profile">
+          {/* <LoadingSpinner/>            */}
             <div>
-              <img src={imageURL} alt = 'profileImage' />
+              {              
+              loading ? <LoadingSpinner/> : <img src={imageURL} alt = 'profileImage' /> 
+              }
               <p className="name">Krishna Sharma</p>
               <div className="title">Software Engineer</div>
               <div className="title">Full stack developer</div>
