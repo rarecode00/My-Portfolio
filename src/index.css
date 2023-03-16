@@ -139,6 +139,10 @@ selector {
     padding-top: 100px !important;
   }
 
+  .interest{
+    padding-top: 100px !important;
+  }
+
 }
 
 @media only screen and (max-width: 1058px ) {
@@ -371,7 +375,7 @@ selector {
   color: white;
   margin-left: -19px;
   margin-top: 30px;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 
 .about-points > li{
@@ -437,7 +441,7 @@ selector {
 .header{
   color: white;
   font-size: 1.9rem;
-  font-weight: 800;
+  font-weight: 700;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -592,6 +596,7 @@ hr {
     width: 40px;
     height: 40px;
     margin-right: 10px;
+    user-select: none;
   }
   
   .skill-item span {
@@ -615,4 +620,39 @@ hr {
   .other-skills{
      color: white;
      margin-top: 10px;
+  }
+
+  /* Interest */
+
+  .interest{
+    background-color: #212121;
+    height: 100vh;
+    padding: 40px;
+  }
+
+  .interest img{
+    width: 50px;
+    height: 50px;
+    color: white;
+    filter: brightness(100%);
+    user-select: none;
+  }
+
+  .interest-item {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .interest-text {
+    margin-left: 20px;
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  .interest-text span{
+     border: 1px solid var(--const-color);
+     background-color: var(--const-color);
+     padding: 6px;
+     border-radius: .8rem;
   }

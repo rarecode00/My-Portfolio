@@ -42,7 +42,7 @@ const Skills = () => {
           </div>
           <div class="skill-item">
             <img
-              src="https://assets.stickpng.com/images/5847f40ecef1014c0b5e488a.png"
+              src="images/5847f40ecef1014c0b5e488a.png"
               alt="logo"
             />
             <span>Firebase</span>
