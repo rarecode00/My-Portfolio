@@ -12,7 +12,7 @@ const About = ({height}) => {
           itemRef
             .getDownloadURL()
             .then(function (url) {
-              console.log(url);
+              // console.log(url);
               setResumeURL(url);
             })
             .catch(function (error) {

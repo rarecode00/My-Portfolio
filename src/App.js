@@ -6,14 +6,13 @@ import Experience from "./components/Experience";
 import Interest from "./components/Interest";
 import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
+import Themes from "./components/Themes";
 
 const App = () => {
   const [width, setWidth] = useState(1200);
   const [height, setHeight] = useState(1200);
   useEffect(() => {
     const handleResize = () => {
-      console.log("Current width:", window.innerWidth);
-      console.log("Current Height:" , window.innerHeight)
       setWidth(window.innerWidth);
       setHeight(window.innerHeight)
     };
@@ -21,15 +20,22 @@ const App = () => {
     window.addEventListener("resize", handleResize);
     window.addEventListener('load' , handleResize)
 
+    // const value = document.querySelector(':root');
+    // const computed = getComputedStyle(value);
+    // console.log(computed.getPropertyValue('--const-color'))
+    // // computed.setProperty('--const-color' , 'red')
+    // value.style.setProperty('--const-color' , 'red')
+
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
   return (
     <Router>
-      <div className="main-container" style={{overflow: 'hidden !important'}}>
+      <div className="main-container">
         <div className="navbar">
           <Navbar width = {width} />
+          {/* <Themes/> */}
         </div>
         <div className="container">
           <Routes>
