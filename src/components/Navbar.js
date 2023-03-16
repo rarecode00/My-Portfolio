@@ -36,15 +36,12 @@ const Navbar = () => {
     };
 
     window.addEventListener("resize", handleResize);
+    window.addEventListener('load' , handleResize)
 
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-
-  const style = {
-    borderLeft: "1px solid red",
-  };
 
   return (
     <>
@@ -52,7 +49,7 @@ const Navbar = () => {
         <div className="nav-side">
           <div className="profile">
             <div>
-              <img src={imageURL} />
+              <img src={imageURL} alt = 'profileImage' />
               <p className="name">Krishna Sharma</p>
               <div className="title">Software Engineer</div>
               <div className="title">Full stack developer</div>
