@@ -1,13 +1,14 @@
 import React from 'react'
 
-const Education = () => {
+const Education = ({height}) => {
   return (
     <div className='edu'>
+      {console.log(height)}
        <span className='header'>Education <hr/></span> 
 
        <ul className='education-list'>
          <li>
-            <img src='images/1619502855113-removebg-preview.png'/>
+            <img src='images/1619502855113-removebg-preview.png' alt='schoolImage'/>
             <span className='school'>Sanskar College of Engineering and Technology, </span>
             <span className='school-location'>Ghaziabad, Uttarpradesh</span>
             <div>
@@ -18,7 +19,7 @@ const Education = () => {
             </div>
          </li>
          <li>
-            <img src='https://www.joonsquare.com/usermanage/image/business/l-n-public-school-hapur-2297/l-n-public-school-hapur-logo.png'/>
+            <img src='https://www.joonsquare.com/usermanage/image/business/l-n-public-school-hapur-2297/l-n-public-school-hapur-logo.png' alt='schoolImage'/>
             <span className='school'>L.N Public School, </span>
             <span className='school-location'>Hapur, Uttarpradesh</span>
             <div>

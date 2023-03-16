@@ -2,9 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import firebase from "./firebase";
 
-const Navbar = () => {
+const Navbar = ({width}) => {
   const [imageURL, setImageURL] = useState("");
-  const [width, setWidth] = useState(1200);
   const location = useLocation();
   useEffect(() => {
     const storageRef = firebase.storage().ref();
@@ -27,20 +26,6 @@ const Navbar = () => {
       .catch(function (error) {
         console.log(error);
       });
-  }, []);
-
-  useEffect(() => {
-    const handleResize = () => {
-      console.log("Current width:", window.innerWidth);
-      setWidth(window.innerWidth);
-    };
-
-    window.addEventListener("resize", handleResize);
-    window.addEventListener('load' , handleResize)
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
   }, []);
 
   return (

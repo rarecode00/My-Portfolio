@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import firebase from "./firebase";
-const About = () => {
+const About = ({height}) => {
   const [resumeURL, setResumeURL] = useState("");
   useEffect(() => {
     const storageRef = firebase.storage().ref();
@@ -66,7 +66,7 @@ const About = () => {
         >
           <i className="fa-brands fa-github"></i>
         </a>
-        <a href={resumeURL} target = {'_blank'}>
+        <a href={resumeURL} rel = 'noreferrer' target = '_blank'>
           <button>
             <i className="fa-solid fa-cloud-arrow-down"></i>
             Download Resume

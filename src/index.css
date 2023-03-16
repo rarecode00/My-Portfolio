@@ -1,7 +1,45 @@
 html{
-  overflow: hidden;
   font-family: Arial, Helvetica, sans-serif !important;
+  scroll-behavior: auto;
+  overflow-x: hidden;
 }
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #212121;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #212121;
+  border-radius: 10px;
+  border: 3px solid #333;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #333;
+  animation: scrollbar-pulse 0.5s ease-out;
+}
+
+@keyframes scrollbar-pulse {
+  0% {
+    border-color: #fff;
+  }
+  50% {
+    border-color: #333;
+  }
+  100% {
+    border-color: #fff;
+  }
+}
+
+
 selector {
   --variable-name: value;
 }
@@ -30,6 +68,7 @@ selector {
     width: 100vw !important;
     padding:  0px;
     transition: left 0.2s cubic-bezier(0.42, 0, 0.58, 1)  , padding 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+    overflow: visible !important;
   }
   
   .navbar{
@@ -200,6 +239,7 @@ selector {
   background-color: #333;
   height: 100vh;
   width: 18vw;
+  position: fixed;
 }
 .nav-items {
   display: flex;
@@ -298,7 +338,6 @@ selector {
   background-color: #212121;
   font-size: 7rem;
   padding: 90px 10px 20px 30px;
-  height: 100vh;
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
   color: var(--const-color);
@@ -449,8 +488,8 @@ hr {
 .edu{
   background-color: #212121;
   padding: 40px;
-  height: 100vh;
   font-size: 1.2rem;
+  height: 100vh;
 }
 
 .edu img{
@@ -484,6 +523,7 @@ hr {
   background-color: #212121;
   height: 100vh;
   padding: 40px;
+  overflow-y: visible !important;
  }
 
  .skill-now{
@@ -512,6 +552,10 @@ hr {
     }
   }
 
+  .skill{
+    width: inherit;
+  }
+
   .skill-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -526,13 +570,14 @@ hr {
   }
   
   .skill-item img {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     margin-right: 10px;
   }
   
   .skill-item span {
     flex-grow: 1;
+    font-size: 1.1rem;
   }
 
   .learning-skills{
@@ -541,7 +586,9 @@ hr {
   }
 
   .skill-head{
+    font-size: 1.3rem;
     font-weight: 700;    
+    margin-bottom: 20px;
   }
   
   .other-skills{
