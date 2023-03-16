@@ -28,21 +28,21 @@ const Skills = () => {
           </div>
           <div class="skill-item">
             <img
-              src="images/png-transparent-cascading-style-sheets-logo-css3-html-web-development-world-wide-web-blue-angle-web-design-removebg-preview.png"
+              src="/images/png-transparent-cascading-style-sheets-logo-css3-html-web-development-world-wide-web-blue-angle-web-design-removebg-preview.png"
               alt="logo"
             />
             <span>CSS</span>
           </div>
           <div class="skill-item">
             <img
-              src="images/png-transparent-postgresql-database-logo-computer-icons-replication-software-developer-miscellaneous-blue-mammal-thumbnail-removebg-preview.png"
+              src="/images/png-transparent-postgresql-database-logo-computer-icons-replication-software-developer-miscellaneous-blue-mammal-thumbnail-removebg-preview.png"
               alt="logo"
             />
             <span>Postgres</span>
           </div>
           <div class="skill-item">
             <img
-              src="images/5847f40ecef1014c0b5e488a.png"
+              src="/images/5847f40ecef1014c0b5e488a.png"
               alt="logo"
             />
             <span>Firebase</span>
@@ -71,7 +71,7 @@ const Skills = () => {
           </div>
           <div class="skill-item">
             <img
-              src="images/png-transparent-postgresql-database-logo-computer-icons-replication-software-developer-miscellaneous-blue-mammal-thumbnail-removebg-preview.png"
+              src="/images/png-transparent-postgresql-database-logo-computer-icons-replication-software-developer-miscellaneous-blue-mammal-thumbnail-removebg-preview.png"
               alt="logo"
             />
             <span>Postgres</span>
@@ -79,7 +79,7 @@ const Skills = () => {
 
           <div class="skill-item">
             <img
-              src="images/png-transparent-docker-logo-kubernetes-microservices-cloud-computing-dockers-logo-text-logo-cloud-computing-thumbnail-removebg-preview.png"
+              src="/images/png-transparent-docker-logo-kubernetes-microservices-cloud-computing-dockers-logo-text-logo-cloud-computing-thumbnail-removebg-preview.png"
               alt="logo"
             />
             <span>Docker</span>
@@ -95,14 +95,14 @@ const Skills = () => {
         <div class="skill-list">
           <div class="skill-item">
             <img
-              src="images/png-clipart-c-logo-the-c-programming-language-computer-icons-computer-programming-source-code-programming-miscellaneous-template-removebg-preview.png"
+              src="/images/png-clipart-c-logo-the-c-programming-language-computer-icons-computer-programming-source-code-programming-miscellaneous-template-removebg-preview.png"
               alt="logo"
             />
             <span>C++</span>
           </div>
           <div class="skill-item">
             <img
-              src="images/js-javascript-round-logo-icon-png-11662226392lsrrajcm0y-removebg-preview.png"
+              src="/images/js-javascript-round-logo-icon-png-11662226392lsrrajcm0y-removebg-preview.png"
               alt="logo"
             />
             <span>Javascript</span>
@@ -116,21 +116,21 @@ const Skills = () => {
           </div>
           <div class="skill-item">
             <img
-              src="images/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo-removebg-preview.png"
+              src="/images/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo-removebg-preview.png"
               alt="logo"
             />
             <span>Express Js</span>
           </div>
           <div class="skill-item">
             <img
-              src="images/png-transparent-green-grass-mongodb-database-documentoriented-database-dashboard-nosql-bson-javascript-removebg-preview.png"
+              src="/images/png-transparent-green-grass-mongodb-database-documentoriented-database-dashboard-nosql-bson-javascript-removebg-preview.png"
               alt="logo"
             />
             <span>Mongoose</span>
           </div>
           <div class="skill-item">
             <img
-              src="images/png-clipart-algorithms-data-structures-programs-data-structures-and-algorithms-introduction-to-algorithms-others-miscellaneous-angle-removebg-preview.png"
+              src="/images/png-clipart-algorithms-data-structures-programs-data-structures-and-algorithms-introduction-to-algorithms-others-miscellaneous-angle-removebg-preview.png"
               alt="logo"
             />
             <span>Data Structures</span>
