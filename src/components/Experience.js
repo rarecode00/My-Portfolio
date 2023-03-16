@@ -6,7 +6,7 @@ const Experience = () => {
        <span className='header'>Experience <hr/></span>
 
        <div className='exp1'>
-         <img src='images/0000000000000723-removebg-preview.png'></img>
+         <img src='images/0000000000000723-removebg-preview.png' alt='companyImage'></img>
          <span className='exp-name'>Coding Ninjas</span>
          <span className='exp-dur'>4 Months</span>
          <ul className='exp-pos'>

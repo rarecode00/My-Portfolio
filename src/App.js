@@ -6,7 +6,6 @@ import Experience from "./components/Experience";
 import Interest from "./components/Interest";
 import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
-import Themes from "./components/Themes";
 
 const App = () => {
   const [width, setWidth] = useState(1200);
