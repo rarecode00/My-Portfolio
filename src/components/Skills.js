@@ -76,6 +76,15 @@ const Skills = () => {
             />
             <span>Postgres</span>
           </div>
+
+          <div class="skill-item">
+            <img
+              src="images/png-transparent-docker-logo-kubernetes-microservices-cloud-computing-dockers-logo-text-logo-cloud-computing-thumbnail-removebg-preview.png"
+              alt="logo"
+            />
+            <span>Docker</span>
+          </div>
+
         </div>
       </div>
 

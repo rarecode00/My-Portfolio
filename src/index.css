@@ -124,7 +124,7 @@ selector {
   }
 
   .exp-name{
-     top: 150px !important;
+     top: 174px !important;
   }
 
   .edu{
@@ -133,6 +133,10 @@ selector {
 
   .social-profiles{
     margin-top: 17px;
+  }
+
+  .skill{
+    padding-top: 100px !important;
   }
 
 }
@@ -198,37 +202,48 @@ selector {
     margin-top: 20px;
   }
 }
-
-@media only screen and (max-width: 683px ) {
+@media only screen and (max-width: 689px ) {
   .q-navbar{
-   left: 480px !important;
+   left: 470px !important;
+  }
+}
+
+
+@media only screen and (max-width: 679px ) {
+  .q-navbar{
+   left: 450px !important;
   }
 }
 
 @media only screen and (max-width: 664px ) {
   .q-navbar{
-   left: 460px !important;
+   left: 410px !important;
   }
 }
 
 @media only screen and (max-width: 642px ) {
   .q-navbar{
-   left: 430px !important;
+   left: 380px !important;
   }
 }
 
 @media only screen and (max-width: 615px ) {
   .q-navbar{
-   left: 400px !important;
+   left: 360px !important;
   }
 }
 
 @media only screen and (max-width: 585px ) {
   .q-navbar{
-   left: 370px !important;
+   left: 340px !important;
   }
 }
 
+@media only screen and (max-width: 557px ) {
+  .q-navbar{
+   left: 320px !important;
+  }
+}
 
 
 
@@ -237,7 +252,7 @@ selector {
 /* Navbar ITEMS-------------------------------------------- */
 .nav-side{
   background-color: #333;
-  height: 100vh;
+  height: 110vh;
   width: 18vw;
   position: fixed;
 }
@@ -341,6 +356,7 @@ selector {
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
   color: var(--const-color);
+  height: 100vh;
 }
 
 .first-name{
@@ -412,6 +428,7 @@ selector {
 /* Experience */
 
 .exp{
+  width: inherit;
   background-color: #212121;
   padding: 40px;
   height: 100vh;
@@ -442,7 +459,7 @@ hr {
   color: white;
   position: absolute;
   font-size: 1.4rem;
-  top: 90px;
+  top: 110px;
   left: 120px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
@@ -490,6 +507,7 @@ hr {
   padding: 40px;
   font-size: 1.2rem;
   height: 100vh;
+  width: inherit;
 }
 
 .edu img{
@@ -523,7 +541,7 @@ hr {
   background-color: #212121;
   height: 100vh;
   padding: 40px;
-  overflow-y: visible !important;
+  /* overflow-y: visible !important; */
  }
 
  .skill-now{
@@ -554,6 +572,7 @@ hr {
 
   .skill{
     width: inherit;
+    height: 100vh;
   }
 
   .skill-list {
@@ -577,7 +596,9 @@ hr {
   
   .skill-item span {
     flex-grow: 1;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #5d6160;
   }
 
   .learning-skills{
