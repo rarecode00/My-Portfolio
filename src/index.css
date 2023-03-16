@@ -488,7 +488,7 @@ hr {
 
  .skill-now{
   padding-top: 40px;
-  color: white
+  color: white;
  }
 
  .pointer{
@@ -534,4 +534,17 @@ hr {
   .skill-item span {
     flex-grow: 1;
   }
+
+  .learning-skills{
+     margin-top: 10px;
+     color: white;
+  }
+
+  .skill-head{
+    font-weight: 700;    
+  }
   
+  .other-skills{
+     color: white;
+     margin-top: 10px;
+  }
